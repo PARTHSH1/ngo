@@ -1,0 +1,60 @@
+.slider-container {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for the slider */
+    margin: 0 auto; /* Center the slider horizontally */
+    position: relative; /* Ensure arrows are positioned correctly */
+    padding: 2vh;
+    margin-top: auto;
+}
+
+.slick-slide img {
+    width: 100%; /* Ensure images fit the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove space below images */
+}
+
+.slick-dots {
+    bottom: 10px; /* Position dots at the bottom */
+}
+
+.slick-dots li button:before {
+    color: #000; /* Customize dot color */
+}
+
+/* Custom Arrow Styling */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-next-arrow {
+    right: 10px; /* Position next arrow */
+}
+
+.custom-prev-arrow {
+    left: 10px; /* Position prev arrow */
+}
+@media (max-width: 768px) {
+    .slider-container {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 1vh;
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px; /* Smaller dots for mobile */
+    }
+
+    .custom-arrow {
+        width: 25px;
+        height: 25px; /* Smaller arrows */
+    }
+}
