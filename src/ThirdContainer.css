@@ -8,14 +8,18 @@
     text-align: center; /* Center text horizontally */
     padding: 20px; /* Optional padding for spacing */
     margin: 4px;
+    
   }
-  
+  h1{
+    color:#90EE90;
+  }
   h2 {
     margin: 20px 20px; /* Add margin to ensure spacing between elements */
     font-size: 3vh;
     padding-left: 20vh ;
     padding-right: 20vh ;
     font-family: Poppins;
+
   }
   #container p {
     

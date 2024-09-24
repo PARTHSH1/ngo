@@ -33,14 +33,14 @@
 }
 
 .navbar-links a {
-  color: white;
+  color: #90EE90;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #11d5ef; /* Change this to your desired hover color */
+  color: #11ef6a; /* Change this to your desired hover color */
 }
 
 /* Adjust body padding to avoid content being hidden under the fixed navbar */

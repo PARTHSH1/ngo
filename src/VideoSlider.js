@@ -1,13 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import './VideoSlider.css'; // Custom CSS
 
 const VideoSlider = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  // Adjust the number of slides based on screen width
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesToShow(1);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+
+    // Add event listener for screen resize
+    window.addEventListener('resize', handleResize);
+
+    // Initial check
+    handleResize();
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
