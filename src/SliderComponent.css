@@ -1,0 +1,64 @@
+/* Main Slider Container */
+.slider-container {
+    width: 80vw; /* Smaller width for the slider */
+    height: 50vh; /* Smaller height for the slider */
+    margin: 0 auto; /* Center the slider */
+    position: relative; /* Ensure arrows are positioned correctly */
+}
+
+/* Slider Images */
+.slick-slide img {
+    width: 100%; /* Fit image to slider container width */
+    height: 100%; /* Fit image to slider container height */
+    object-fit: cover; /* Maintain image aspect ratio and cover slider */
+    display: block; /* Remove space below images */
+}
+
+/* Dots Style */
+.slick-dots {
+    bottom: 10px; /* Position dots at the bottom */
+}
+
+.slick-dots li button:before {
+    color: #90EE90; /* Customize dot color */
+}
+
+/* Custom Arrow Styling */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-next-arrow {
+    right: 10px; /* Position next arrow */
+}
+
+.custom-prev-arrow {
+    left: 10px; /* Position prev arrow */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    /* Slider adjustments */
+    .slider-container {
+        height: 40vh; /* Reduce height for smaller screens */
+    }
+
+    .slick-slide img {
+        height: 40vh; /* Adjust image height for slider */
+    }
+
+    .custom-arrow {
+        width: 25px;
+        height: 25px; /* Smaller arrows */
+    }
+}

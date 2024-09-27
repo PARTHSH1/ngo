@@ -1,0 +1,187 @@
+/* Main container styling */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left side container */
+  .left-side {
+    width: 60%;
+    padding-right: 20px;
+  }
+  
+  .left-side h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .left-side span {
+    color:#2a9d8f;
+  }
+  .left-side p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-box {
+    width: 30%;
+    background: #f7f7f7;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .stat-box h3 {
+    font-size: 22px;
+    color: limegreen;
+    margin-bottom: 5px;
+  }
+  
+  .stat-box p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Right side container */
+  .right-side {
+    width: 35%;
+    padding-left: 20px;
+  }
+  
+  /* Recent Donations List */
+  .donation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+  
+  .donation-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donation-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .donation-amount strong {
+    color: #2a9d8f;
+    font-size: 16px;
+  }
+  
+  .donation-location {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-icon img {
+    margin-right: 5px;
+  }
+  
+  .location-place {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .donation-date {
+    font-size: 13px;
+    color: #777;
+    text-align: right;
+  }
+  
+  /* Tweets Section */
+  .tweets {
+    margin-top: 30px;
+  }
+  
+  .tweet {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .tweet .meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .tweet .meta .image {
+    margin-right: 10px;
+  }
+  
+  .tweet .meta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .tweet .title p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .tweet .message {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .tweet .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .tweet .options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tweet .options a {
+    font-size: 14px;
+    color: #2a9d8f;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #2a9d8f;
+    border-radius: 5px;
+  }
+  
+  .tweet .options a:hover {
+    background-color: #2a9d8f;
+    color: #fff;
+  }
+  
+  .loveBtn.active, .commentBtn.active, .shareBtn.active {
+    background-color: #2a9d8f;
+    color: #fff;
+  }
+  
+  /* Liked Section */
+  .liked {
+    font-size: 13px;
+    color: #777;
+  }
+  
